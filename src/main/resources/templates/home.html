@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>PoC Spring Kerberos Security</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <a class="navbar-brand" href="http://localhost:8090/home">PoC Spring Kerberos Security</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="http://localhost:8090/home">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="https://www.bancosantander.es/es/particulares">
+                        Web Particulares
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="https://www.bancosantander.es/es/empresas">
+                        Web Empresas
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="http://localhost:8090/login">
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<br>
+<br>
+<div class="container">
+    <h3 class="text-center text-secondary border border-danger">PoC Spring Kerberos Security</h3>
+</div>
+<br><br><br><br>
+<div class="container">
+    <h3 class="text-center text-secondary">Welcome!, click <a th:href="@{/hello}">here</a> to see your validate logged user.</h3>
+</div>
+<br><br><br><br>
+<footer class="container">
+    <hr />
+    <img th:src="@{/images/logo_darwin.png}" alt="Darwin Logo" />
+    <p>
+        <br>
+        Este proyecto ha sido desarrollado con
+        <a href="https://www.jetbrains.com/es-es/idea/"> InteliJ IDEA </a>
+        IDE por
+        <a href="mailto:juanluis.goldaracena@servexternos.gruposantander.es"> Juan Luis Goldaracena Izquierdo, </a>
+        en colaboración con
+        <a href="https://www.bancosantander.es/es/particulares"> Banco Santander</a>
+        <br>
+        Codificado con
+        <a href="https://projects.spring.io/spring-boot/">Spring Boot Security</a> ,
+        <a href="https://www.oracle.com/java/technologies/javase/jdk12-archive-downloads.html"> JDK 12.0.2</a> y
+        <a href="http://www.thymeleaf.org"> Thymeleaf</a>
+        <br><br>
+        &copy; 2020. Todos los derechos reservados. Términos de uso y privacidad.
+        <br><br>
+    </p>
+</footer>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+</body>
+</html>
