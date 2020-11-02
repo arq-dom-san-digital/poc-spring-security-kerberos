@@ -1,3 +1,4 @@
+spring-security-sso-kerberos
 *.class
 target/classes/countries.xsd
 target/jaxb2/.xjc-xjcStaleFlag
